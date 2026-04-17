@@ -5,6 +5,8 @@ use App\Controllers\IndexController;
 use Core\Routing\Route;
 use App\Controllers\NagadController;
 
+Route::get('/', [IndexController::class, 'index'], 'index.home');
+
 Route::group(['prefix' => 'api'], function () {
     Route::group(['prefix' => 'site'], function () {
         Route::post('/health', [IndexController::class, 'health'], 'index.health');
