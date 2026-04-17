@@ -1,0 +1,11 @@
+.image-preview-container {
+    transition: all 0.3s ease;
+}
+
+.image-preview-container:hover .image-overlay {
+    opacity: 1;
+}
+
+.image-overlay {
+    transition: opacity 0.3s ease;
+}
